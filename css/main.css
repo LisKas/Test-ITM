@@ -1,0 +1,483 @@
+*{
+	box-sizing: border-box;
+}
+body{
+	font-family:  'Roboto', sans-serif;
+	color: #fff;
+}
+h1, h2{
+	margin: 0;
+	font-size: 70px;
+	font-weight: 700;
+	line-height: 77px;
+}	
+h1{
+	color:#f0e353;
+}
+h3{
+	font-size: 35px;
+	line-height: 35px;
+	font-weight: 500;
+	margin: 0;
+
+}
+img{
+	max-width: 100%;
+	float: left;
+	margin-right: 30px;
+}
+/*////////////////////////////////////////////////////////////////*/
+.container{
+	max-width: 1600px;
+	margin: 0 auto;
+	padding: 0 20px;
+}
+/*---------------- INFO-----------------*/
+.first{
+	padding-top: 90px;
+	padding-bottom: 55px;
+    background: #395583 url('../img/bg.jpg') no-repeat center center/cover;
+    height: 100vh;
+}
+.title{
+	float: left;
+	width: 1100px;
+}
+.title p{
+	margin: 0;
+	margin-top: 15px;
+	font-size: 36px;
+	font-weight: 300;
+}
+
+.date{
+	position: relative;
+	display: inline-block;
+	font-size: 50px;
+	font-weight:500;
+	margin-top: 85px;
+	margin-left: 15px;
+}
+.date::before{
+	position: absolute;
+	content: '';
+	width: 10px;
+	height: 60px;
+	background-color: #f0e353;
+	left: -15px;
+	top:0;
+}
+.date span{
+	font-size: 25px;
+	font-weight: 300;
+}
+
+.counter{
+	float: right;
+	width: 280px;
+	border:1px solid #fff;
+	margin:0 auto;
+}
+.massage{
+	font-size: 26px;
+	font-weight: 100;
+	text-align: center;
+	padding: 0 65px;
+	margin-bottom: 20px;
+}
+.login{
+	text-align: center;
+	margin-top: 160px;
+}
+.login p{
+	margin:0;
+	margin-top: 20px;
+	font-size: 22px;
+	font-weight: 100;
+}
+.btn{
+	display: inline-block;
+	color: #f0e353;
+	text-decoration: none;
+	font-size: 50px;
+	font-weight: 500;
+	border:2px solid #f0e353;
+	padding: 25px 50px;
+	border-radius: 3px;
+}
+.btn:hover{
+	color:#fff;
+	background-color: #f0e353;
+	border:2px solid #fff;
+	transition: .7s;
+	text-shadow: 0 1px 10px rgba(0, 0, 0, .5);
+}
+
+.arrow{
+	position: relative;
+	display: block;
+	margin:0 auto;
+	width: 45px;
+	height: 45px;
+	border-bottom: 1px solid #fff;
+    border-left: 1px solid #fff;
+    animation-name: move;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes move { 
+  0% { 
+   transform: rotate(-45deg)  translate(0, 0); 
+  } 
+  10% { 
+   transform: rotate(-45deg) translate(-5px ,5px); 
+ 
+  } 
+   20% { 
+   transform:  rotate(-45deg) translate(-10px ,10px); 
+ 
+  } 
+30% { 
+   transform: rotate(-45deg) translate(-15px ,15px); 
+ 
+  } 
+40% { 
+   transform:rotate(-45deg) translate(-20px ,20px); 
+ 
+  } 
+
+  50% { 
+
+  transform:rotate(-45deg) translate(-25px ,25px); 
+  } 
+  60% { 
+
+  transform:rotate(-45deg) translate(-20px ,20px); 
+  } 
+  70% { 
+
+  transform:rotate(-45deg) translate(-15px ,15px);
+  } 
+ 80% { 
+
+  transform:rotate(-45deg) translate(-10px ,10px);
+  } 
+   90% { 
+
+  transform:rotate(-45deg) translate(-5px ,5px);
+  } 
+100% { 
+
+  transform:rotate(-45deg) translate(0 ,0px);
+  } 
+
+  } 
+
+
+
+/*-------------------------------------*/
+
+/*---------------FOOTER----------------*/
+.footer{
+	position: relative;
+	background-color: #55719f;
+	padding-top:105px;
+	padding-bottom: 115px;
+	border-top: 1px solid #fff;
+}
+.footer::before{
+	position: absolute;
+	content: '';
+	border-left: 1px solid #fff;
+	top:0;
+	bottom:0;
+	left: 50%;
+}
+.col-50{
+	width: 50%;
+	float: left;
+}
+.section-descr{
+	margin: 0 55px;
+}
+.col-50:nth-child(2) h3{
+	border-bottom: 2px solid #fff;
+	display: inline-block;
+}
+
+/*-------------------------------------*/
+
+/*///////MODIFIED FLIP_COUNTER/////*/
+.flip-counter{
+	margin: 0 22px;
+}
+.flip-clock-wrapper ul {
+    position: relative;
+    float: left;
+    margin: 5px;
+    width: 115px;
+    height: 135px;
+    font-size: 100px;
+    font-weight: 100;
+    background: transparent;
+  }
+  .flip-clock-wrapper .flip {   
+  	box-shadow: none; 
+  	margin: 50px 0;
+  }
+
+  .flip-clock-wrapper ul li a div div.inn {
+    position: absolute;
+    left: 0;
+    z-index: 1;
+    width: 100%;
+    height: 200%;
+    color: #fff;
+    text-align: center;
+    background-color: transparent;
+   
+    font-size: 180px;
+  
+}
+.flip-clock-wrapper ul li{
+	line-height: 140px;
+}
+.flip-clock-wrapper ul li a div.up:after {
+ display: none;
+}
+
+/* SHADOW */
+.flip-clock-wrapper ul.play li.flip-clock-before .up .shadow {
+ 
+  background: rgb(50, 78, 124);
+  }
+.flip-clock-wrapper ul.play li.flip-clock-active .up .shadow {
+background: rgb(50, 78, 124);
+}
+
+/*DOWN*/
+.flip-clock-wrapper ul.play li.flip-clock-before .down .shadow {
+ 
+  background:rgb(50, 78, 124);
+}
+
+.flip-clock-wrapper ul.play li.flip-clock-active .down .shadow {
+background: rgb(50, 78, 124);
+}
+
+/*////// HELP CLASSES /////////////*/
+.clearfix:before,
+.clearfix:after {
+    content: " "; 
+    display: table; 
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+
+/*//////////////////////////////////////////////////////////////////*/
+
+@media screen and (max-width: 1500px) {
+	h1, h2{
+	font-size: 60px;
+	line-height:70px;
+  }	
+  h3{
+    font-size: 25px;
+  }
+  .title{
+	width: 900px;
+  }
+  .title p{
+	font-size: 25px;
+  }
+  
+  .login{
+  	margin-top: 120px;
+  }
+  .login p{
+  	font-size: 18px;
+  }
+  .btn{
+    padding: 18px 43px;
+    font-size: 45px;
+  }
+  .footer{
+	padding-top:80px;
+	padding-bottom: 85px;
+	
+  }
+}
+/*...........................................*/
+@media screen and (max-width: 1380px) {
+	h1, h2{
+	font-size: 50px;
+	line-height:60px;
+  }	
+  h3{
+  	font-size: 26px;
+  	margin-top: 20px;
+  	display: inline-block;
+  }
+  .first{
+	padding-top: 60px;
+   
+  }
+  .title{
+	width: 820px;
+  }
+  .title p{
+	font-size: 18px;
+  }
+  .date{
+  	margin-top: 30px;
+  	font-size: 45px;
+  }
+  
+  .login{
+  	margin-top: 40px;
+  }
+  .login p{
+  	font-size: 16px;
+  }
+  .btn{
+    padding: 15px 40px;
+    font-size: 35px;
+  }
+  .footer{
+	padding-top:60px;
+	padding-bottom: 65px;
+	
+  }
+  .col-50{
+		text-align: center;
+	}
+	.col-50:nth-child(2) h3{
+	border-bottom: none;
+	display:block;
+}
+}
+/*.....................................*/
+@media screen and (max-width: 1200px) {
+	.first{
+   height: 100%;
+    } 
+	.title{
+		text-align: center;
+		width: 100%;
+	}
+	.date{
+		font-size: 40px;
+	}
+	.date:before{
+		width: 8px;
+		height: 47px;
+	}
+	.date span{
+		font-size: 20px;
+	}
+	.title{
+		float:none;
+	}
+	.counter{
+		float: none;
+		margin: 0 auto;
+		margin-top: 50px;
+	}
+}
+/*......................................*/
+@media screen and (max-width: 1050px) {
+	img{
+		float: none;
+		margin-bottom: 15px;
+	}
+}
+/*......................................*/
+@media screen and (max-width: 800px) {
+	h1, h2{
+	font-size: 40px;
+	line-height:50px;
+  }	
+  .title p{
+	font-size: 16px;
+  }
+  .date{
+		font-size: 35px;
+	}
+	.date:before{
+		width: 8px;
+		height: 40px;
+	}
+	img{
+		margin: 0 ;
+	}
+
+	.footer{
+		padding: 30px 0;
+	}
+	.footer:before{
+		display: none;
+	}
+	.col-50{
+		margin: 30px 0;
+	    float: none;
+	    width: 100%;
+	    border-bottom: 1px solid #fff;
+	}
+}
+/*.......................................*/
+@media screen and (max-width: 540px) {
+  h1, h2{
+	font-size: 30px;
+	line-height:40px;
+  }	
+  h3{
+  	font-size: 20px;
+  }
+  .first{
+	padding-top: 60px;
+  }
+  .date{
+	font-size: 30px;
+   }
+  .date:before{
+	left:0;
+	width: 6px;
+	height: 36px;
+   }
+  .counter{
+    margin:0 auto;
+	margin-top: 20px;
+	}
+  .flip-clock-wrapper .flip {   
+  	box-shadow: none; 
+  	margin: 20px 0;
+    }
+  .flip-clock-wrapper ul li a div div.inn {
+    font-size: 130px;
+    }
+  .flip-clock-wrapper ul li{
+	line-height: 100px;
+    }
+  .massage{
+	font-size: 20px;
+    }
+  .login{
+  	margin-top: 60px;
+   }
+  .login p{
+  	font-size: 16px;
+   }
+  .btn{
+    padding: 10px 30px;
+    font-size: 30px;
+   }
+  .footer{
+	padding-top:50px;
+	padding-bottom: 55px;
+   }
+}
