@@ -34,7 +34,7 @@ img{
 }
 /*---------------- INFO-----------------*/
 .first{
-	padding-top: 90px;
+	padding-top: 100px;
 	padding-bottom: 55px;
     background: #395583 url('../img/bg.jpg') no-repeat center center/cover;
     height: 100vh;
@@ -87,7 +87,7 @@ img{
 }
 .login{
 	text-align: center;
-	margin-top: 160px;
+	margin-top: 125px;
 }
 .login p{
 	margin:0;
