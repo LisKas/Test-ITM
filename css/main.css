@@ -76,7 +76,7 @@ img{
 	float: right;
 	width: 280px;
 	border:1px solid #fff;
-	margin:0 auto;
+	margin:0 15px;
 }
 .massage{
 	font-size: 26px;
@@ -481,3 +481,10 @@ background: rgb(50, 78, 124);
 	padding-bottom: 55px;
    }
 }
+/*...............................*/
+@media screen and (max-width: 460px) {
+   .btn{
+   	font-size: 20px;
+   	padding: 10px 20px;
+   }
+}	
